@@ -1,5 +1,3 @@
-#Our CLI Controller
-
 class FixturesList::CLI
 
   def call
