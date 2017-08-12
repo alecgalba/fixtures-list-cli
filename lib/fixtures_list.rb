@@ -1,2 +1,6 @@
 require_relative "./fixtures_list/version"
-require_relative './fixtures_list/cli'
+
+
+module FixturesList
+   #Your code here
+end
