@@ -1,5 +1,7 @@
 -- What do I want this program to show?
 
+  => A CLI that shows the big 3 season league fixture list
+
   => Premier League Schedule - England (league.rb)
 (url = "http://www.foxsports.com/soccer/schedule?competition=1&season=2017&round=1&week=0&group=0&sequence=1")
     => Teams(league.rb)

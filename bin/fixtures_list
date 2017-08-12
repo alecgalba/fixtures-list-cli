@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
-require './lib/fixtures_list'
+require "bundler/setup"
+require 'fixtures_list'
 
 FixturesList::CLI.new.call
