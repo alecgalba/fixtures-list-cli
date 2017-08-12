@@ -1,3 +1,14 @@
+How to Build a CLI Gem
+
+[ X ] Plan your gem, imagine your interface
+[ X ] Start with the project structure - google
+[ X ] Start with the entry point - the file run
+[ ] force that to build the CLI interface
+[ ] stub out the interface
+[ ] start making things real
+[ ] discover objects.
+[ ] program
+
 -- What do I want this program to show?
 
   => A CLI that shows the big 3 season league fixture list
