@@ -9,6 +9,12 @@ How to Build a CLI Gem
 [ ] discover objects.
 [ ] program
 
+What is a fixture?
+  -- A fixture has a home team and an away team
+  -- A fixture has a date
+  -- A fixture has a time
+  -- A fixture has a location
+
 -- What do I want this program to show?
 
   => A CLI that shows the big 3 season league fixture list
@@ -19,6 +25,7 @@ How to Build a CLI Gem
     => Fixture(league.rb)
       => Team 1 (Home) vs Team 2 (Away) (fixture.rb)
       => Date (fixture.rb)
+      => Time (fixture.rb)
       => Location (fixture.rb)
 
   => La Liga - Spain (league.rb)
@@ -27,6 +34,7 @@ How to Build a CLI Gem
     => Fixture(league.rb)
       => Team 1 (Home) vs Team 2 (Away) (fixture.rb)
       => Date (fixture.rb)
+      => Time (fixture.rb)
       => Location (fixture.rb)
 
   => Seria A -  Italy (league.rb)
@@ -35,6 +43,7 @@ How to Build a CLI Gem
     => Fixture (league.rb)
       => Team 1 (Home) vs Team 2 (Away) (fixture.rb)
       => Date (fixture.rb)
+      => Time (fixture.rb)
       => Location (fixture.rb)
 
 
