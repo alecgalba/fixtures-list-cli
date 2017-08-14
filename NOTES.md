@@ -3,15 +3,14 @@ How to Build a CLI Gem
 [ X ] Plan your gem, imagine your interface
 [ X ] Start with the project structure - google
 [ X ] Start with the entry point - the file run
-[ ] force that to build the CLI interface
-[ ] stub out the interface
-[ ] start making things real
-[ ] discover objects.
-[ ] program
+[ X ] force that to build the CLI interface
+[ X ] stub out the interface
+[ X ] start making things real
+[ X ] discover objects.
+[ X ] program
 
 What is a fixture?
   -- A fixture has a home team and an away team
-  -- A fixture has a date
   -- A fixture has a time
   -- A fixture has a location
 
@@ -20,29 +19,26 @@ What is a fixture?
   => A CLI that shows the big 3 season league fixture list
 
   => Premier League Schedule - England (league.rb)
-(url = "http://www.foxsports.com/soccer/schedule?competition=1&season=2017&round=1&week=0&group=0&sequence=1")
+(url = "http://www.foxsports.com/soccer/schedule?competition=1")
     => Teams(league.rb)
     => Fixture(league.rb)
       => Team 1 (Home) vs Team 2 (Away) (fixture.rb)
-      => Date (fixture.rb)
       => Time (fixture.rb)
       => Location (fixture.rb)
 
   => La Liga - Spain (league.rb)
-(url = "http://www.foxsports.com/soccer/schedule?competition=2&season=2017&round=1&week=0&group=0&sequence=1")
+(url = "http://www.foxsports.com/soccer/schedule?competition=2")
     =>Teams(league.rb)
     => Fixture(league.rb)
       => Team 1 (Home) vs Team 2 (Away) (fixture.rb)
-      => Date (fixture.rb)
       => Time (fixture.rb)
       => Location (fixture.rb)
 
   => Seria A -  Italy (league.rb)
-(url = "http://www.foxsports.com/soccer/schedule?competition=3&season=2017&round=1&week=0&group=0&sequence=1")
+(url = "http://www.foxsports.com/soccer/schedule?competition=3")
     => Teams (league.rb)
     => Fixture (league.rb)
       => Team 1 (Home) vs Team 2 (Away) (fixture.rb)
-      => Date (fixture.rb)
       => Time (fixture.rb)
       => Location (fixture.rb)
 
@@ -54,7 +50,7 @@ Lib Folder
           VERSION = "0.1.0"
          end
 
-  => command_line.rb
+    => cli.rb
 
   => scraper.rb
 
