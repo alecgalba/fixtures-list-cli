@@ -1,5 +1,10 @@
 class CLI
 
+  def begin
+    welcome
+    call
+  end
+
   def welcome
     puts ""
     puts "Retrieving the English Premier League, Spanish La Liga, and Italian Serie A fixture schedules for you now."
@@ -40,8 +45,6 @@ class CLI
     puts " - - - - - - - - - - - - - - - - - "
     puts ""
     puts ""
-
-    call
 
   end
 
@@ -124,6 +127,7 @@ class CLI
   end
 
   def exit
+    puts ""
     puts "That's the fulltime whistle!"
   end
 
