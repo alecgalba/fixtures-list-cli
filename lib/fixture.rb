@@ -1,5 +1,4 @@
 class Fixture
-  #attr_accessor :home_team, :away_team, :date, :time, :location, :league
   attr_accessor :all_info, :date, :league
   @@all = []
 
@@ -17,12 +16,5 @@ class Fixture
   def self.all
     @@all
   end
-
-  #def self.print_all
-    #all.each_with_index do |show, index|
-      #puts "#{index+1}.     #{show.team_name teams}"
-    #end
-  #end
-
 
 end
