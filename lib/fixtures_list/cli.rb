@@ -32,10 +32,23 @@ class FixturesList::CLI
             ▓▓▓▓▓███▒▒▒▒▒▒██████████▒▒▒▒██
             ▓▓▓▓▓▓▓████▒▒▒█████████▒▒███
             ▓▓▓▓▓▓▓▓▓▓█████▒▒▒▒▒▒████ "
+
+    england = League.new("The English Premier League (EPL)", Scraper.premier_scraper)
+    spain = League.new("The Spanish La Liga Santander (La Liga)", Scraper.la_liga_scraper)
+    italy = League.new("The Italian Serie A TIM (Serie A)", Scraper.serie_a)
+
+    input = nil
+
+    puts " - - - - - - - - - - - - - - - - - "
+    puts "*                                  *"
+    puts "*    Let's Watch Some Footy!!!     *"
+    puts "*                                  *"
+    puts " - - - - - - - - - - - - - - - - - "
+    puts ""
+    puts ""
   end
 
   def list_leagues
-    sleep(10)
     puts "
     1. Premier League fixtures
     2. La Liga fixtures
