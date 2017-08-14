@@ -3,6 +3,7 @@ class CLI
   def begin
     welcome
     call
+    options
   end
 
   def welcome
@@ -48,12 +49,17 @@ class CLI
   end
 
   def call
+   puts ""
+   League.print_all
+   puts ""
+   puts "Enter the number of the league whose upcoming fixtures you would like to see:"
+   puts ""
+  end
+
+  def options
    while @input != "exit"
      puts ""
-     puts "Enter the number of the league whose upcoming fixtures you would like to see:"
-     puts ""
-     League.print_all
-     puts ""
+     puts "Options:"
      puts "'list' -  View the list of leagues you can retrieve fixture information from."
      puts "'exit' -  The referee will blow the fulltime whistle."
      puts ""
@@ -64,16 +70,19 @@ class CLI
      if @input.downcase == "exit"
        exit
        break
-     elsif @input.to_i.between?(1, League.all.count)
-       select_fixture_by_league
-     else
-       "That is not a valid option. Please try again"
+     elsif @input == "list"
        call
+     elsif !@input.to_i.between?(1, League.all.count) && @input != "list" && @input != "exit"
+       puts ""
+       puts "That is not a valid option. Please try again"
+       options
+     else @input.to_i.between?(1, League.all.count)
+       select_fixture_by_league
      end
    end
- end
+  end
 
- def select_fixture_by_league
+  def select_fixture_by_league
     selected_league = League.find(@input)
     puts ""
     puts "#{selected_league.name}:"
