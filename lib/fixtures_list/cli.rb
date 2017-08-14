@@ -27,9 +27,9 @@ class CLI
         ▓▓▓▓▓▓▓████▒▒▒█████████▒▒███
         ▓▓▓▓▓▓▓▓▓▓█████▒▒▒▒▒▒████ "
 
-    #england = League.new("The English Premier League (EPL)", Scraper.premier_scraper)
+    england = League.new("The English Premier League (EPL)", Scraper.premier_scraper)
     spain = League.new("The Spanish La Liga Santander (La Liga)", Scraper.la_liga_scraper)
-    #italy = League.new("The Italian Serie A TIM (Serie A)", Scraper.serie_a)
+    italy = League.new("The Italian Serie A TIM (Serie A)", Scraper.serie_a_scraper)
 
     input = nil
 
@@ -76,10 +76,10 @@ class CLI
     selected_league = League.find(@input)
     puts ""
     puts "#{selected_league.name}:"
-    selected_league.fixtures.each do |fixture, index|
+    selected_league.fixtures.each_with_index do |fixture|
       puts "#{fixture.all_info}"
 
-      #puts "#{index+1}. #{fixture.home_team} vs #{fixture.away_team} - #{fixture.date}, #{fixture.time} - #{fixture.location}"
+      #puts "#{fixture.home_team} #{fixture.away_team} #{fixture.date} #{fixture.time}"
       puts ""
     end
 
