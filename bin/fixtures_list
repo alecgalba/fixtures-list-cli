@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require './lib/fixtures_list'
+require_relative '../lib/fixtures_list.rb'
 
-FixturesList::CLI.new.call
+CLI.new.welcome
