@@ -1,6 +1,7 @@
-class FixturesList::Fixture
+class Fixture
+  attr_accessor :home_team, :away_team, :date, :time, :location, :league
+  @@all = []
 
-  def self.fixture
-  end
+  
 
 end
