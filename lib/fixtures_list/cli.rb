@@ -45,7 +45,6 @@ class CLI
     puts " - - - - - - - - - - - - - - - - - "
     puts ""
     puts ""
-
   end
 
   def call
@@ -71,7 +70,6 @@ class CLI
        "That is not a valid option. Please try again"
        call
      end
-
    end
  end
 
@@ -81,49 +79,8 @@ class CLI
     puts "#{selected_league.name}:"
     selected_league.fixtures.each_with_index do |fixture|
       puts "#{fixture.all_info}"
-
-      #puts "#{fixture.home_team} #{fixture.away_team} #{fixture.date} #{fixture.time}"
       puts ""
     end
-
-    #puts ""
-    #puts "Enter the number of the fixture you would like to get more info about:"
-    #puts "Type 'back' to return to the main menu, or 'exit' to quit:"
-
-    #@fixture_number = gets.strip
-
-    #if @fixture_number.downcase == "back"
-      #call
-    #elsif @fixture_number.downcase == "exit"
-      #@input = "exit"
-      #exit
-    #elsif @fixture_number.to_i < 1 || @fixture_number.to_i > selected_league.fixtures.count
-      #puts "That is not a valid input. Please try again."
-      #select_fixture_by_league
-    #else
-      #fixture = selected_league.find_fixture(@fixture_number)
-
-      #puts "#{fixture.home_team} vs #{fixture.away_team} (#{fixture.date}, #{fixture.time}), #{fixture.location}}"
-      #puts "Below is the link for information about the line-ups, statistics, and viewing options"
-      #puts "#{fixture.fixture_link}"
-    #end
-
-    #if @input == "exit"
-      #call
-    #else
-      #puts ""
-      #puts "Would you like to see the list of fixtures from #{selected_league.name} again? (y/n)"
-      #@input5 = gets.strip.downcase
-    #end
-
-    #if @prompted_input == "y"
-      #select_fixture_by_league
-    #elsif @prompted_input == "exit"
-      #@input = "exit"
-      #exit
-    #else
-      #call
-    #end
   end
 
   def exit
