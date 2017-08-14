@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["'Alec Alba'"]
   spec.email         = ["'alecgalba@gmail.com'"]
 
-  spec.summary       = %q{TODO: Scrape the fox sports website for fixtures of the EPL, La Liga, and Serie A leagues.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{TODO: Look at some soccer fixtures.}
+  spec.description   = %q{TODO: Scrape the fox sports website for fixtures of the EPL, La Liga, and Serie A leagues.}
+  spec.homepage      = "TODO: https://github.com/alecgalba/fixtures-list-cli"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
